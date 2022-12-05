@@ -18,11 +18,14 @@ elRezult.textContent = array
 
 function  chek(evt)
 { evt.preventDefault();
+    
 
     array.unshift(elInput.value)
     array.push(elInput2.value);
 
     elRezult.textContent = array;
+    elInput.value = " ";
+    elInput2.value = " "
     return
 };
 // --------------------------------------------------
